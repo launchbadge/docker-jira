@@ -1,12 +1,12 @@
 # Jira
 
-### Build
+#### Build
 
 ```
 docker build -t jira:6.3.3 --rm https://github.com/launchbadge/docker-jira.git
 ```
 
-### Run
+#### Run
 
 ```
 docker run --restart=always -d --name postgres postgres
