@@ -7,8 +7,6 @@ RUN apt-get update && \
     apt-get install -q -y \
       git-core \
       curl \
-      sudo \
-      xmlstarlet \
       software-properties-common \
       python-software-properties
 
