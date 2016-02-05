@@ -17,7 +17,7 @@ RUN apt-add-repository ppa:webupd8team/java -y && \
     apt-get install oracle-java8-installer -y
 
 # Install Jira
-ENV JIRA_VERSION 6.3.3
+ENV JIRA_VERSION 7.0.10
 VOLUME ["/data"]
 RUN curl -Lks http://www.atlassian.com/software/jira/downloads/binary/atlassian-jira-${JIRA_VERSION}.tar.gz -o /root/jira.tar.gz && \
     mkdir /opt/jira && \
