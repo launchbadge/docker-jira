@@ -19,7 +19,7 @@ RUN apt-add-repository ppa:webupd8team/java -y && \
 # Install Jira
 ENV JIRA_VERSION 7.0.10
 VOLUME ["/data"]
-RUN curl -Lks http://www.atlassian.com/software/jira/downloads/binary/atlassian-jira-${JIRA_VERSION}.tar.gz -o /root/jira.tar.gz && \
+RUN curl -Lks https://www.atlassian.com/software/jira/downloads/binary/atlassian-jira-software-${JIRA_VERSION}-jira-${JIRA_VERSION}.tar.gz -o /root/jira.tar.gz && \
     mkdir /opt/jira && \
     tar zxf /root/jira.tar.gz --strip=1 -C /opt/jira && \
     echo "jira.home = /data" > /opt/jira/atlassian-jira/WEB-INF/classes/jira-application.properties && \
